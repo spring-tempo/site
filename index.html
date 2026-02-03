@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>IT TOP College — Фотодайджесты студенческой жизни</title>
+     <meta
+       name="description"
+       content="Современный фотодайджест студенческой жизни IT TOP College: мероприятия, конкурсы, поездки и повседневная учеба."
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+     <header class="site-header">
+       <div class="container site-header__inner">
+         <div class="site-header__brand">
+           <!-- Замените src на путь к вашему логотипу -->
+           <img
+             src=".\images\withoutCollege.png"
+             alt="IT TOP College"
+             class="site-header__logo-image"
+           />
+         </div>
+         <div class="site-header__location" aria-label="Локация колледжа">
+           <span class="site-header__location-icon" aria-hidden="true"></span>
+           <span class="site-header__location-text">Геленджик</span>
+         </div>
+       </div>
+     </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Студенческая жизнь колледжа</p>
+            <h1 id="hero-title" class="hero__title">
+              Моменты из жизни студентов колледжа IT TOP в Геленджике
+            </h1>
+            <p class="hero__text">
+              Учёба, мероприятия, командная работа и яркие эмоции — здесь собраны настоящие моменты студенческой жизни IT TOP. Мы учимся, развиваемся, пробуем новое и создаём воспоминания, которые остаются с нами надолго.
+            </p>
+          </div>
+          <div class="hero__media" aria-hidden="true">
+            <img src=".\images\logo.png"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      
+
+      <!-- Digests -->
+      <section
+        id="digests"
+        class="section section--padded section--muted"
+        aria-labelledby="digests-title"
+      >
+        <div class="container">
+          <div class="section__header">
+            <div>
+              <h2 id="digests-title" class="section__title">Фотодайджесты мероприятий</h2>
+              <p class="section__subtitle">
+                Краткие визуальные отчеты о самых ярких событиях колледжа.
+              </p>
+            </div>
+            <div class="section__controls" aria-label="Фильтрация дайджестов">
+              <button class="chip chip--active" type="button" data-filter="all">
+                Все
+              </button>
+              <button class="chip" type="button" data-filter="study">
+                Городские мероприятия
+              </button>
+              <button class="chip" type="button" data-filter="contest">
+                Прочие мероприятия
+              </button>
+              <button class="chip" type="button" data-filter="events">
+                Соревнования
+              </button>
+              <button class="chip" type="button" data-filter="trip">
+                Праздники
+              </button>
+            </div>
+          </div>
+
+          <div class="digest-grid" aria-label="Список фотодайджестов">
+            <!-- Карточки подставляются из JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Student life -->
+      <section
+        id="life"
+        class="section section--padded"
+        aria-labelledby="life-title"
+      >
+        <div class="container">
+          <div class="section__header section__header--stacked">
+            <h2 id="life-title" class="section__title">Студенческая жизнь</h2>
+            <p class="section__subtitle">
+              Кадры из повседневной жизни колледжа: пара, перерыв, проект, сцена,
+              спортзал.
+            </p>
+          </div>
+
+          <div class="life-grid">
+            <figure class="life-card">
+              <div class="life-card__image life-card__image--classroom"></div>
+              <!-- <figcaption class="life-card__caption"> -->
+                <!-- Практические занятия. -->
+              <!-- </figcaption> -->
+            </figure>
+            <figure class="life-card">
+              <div class="life-card__image life-card__image--hall"></div>
+              <!-- <figcaption class="life-card__caption"> -->
+                <!-- Студенческие концерты, фестивали и творческие вечера. -->
+              <!-- </figcaption> -->
+            </figure>
+            <figure class="life-card">
+              <div class="life-card__image life-card__image--team"></div>
+              <!-- <figcaption class="life-card__caption"> -->
+                <!-- Командные проекты, хакатоны и профессиональные чемпионаты. -->
+              <!-- </figcaption> -->
+            </figure>
+            <figure class="life-card">
+              <div class="life-card__image life-card__image--outdoor"></div>
+              <!-- <figcaption class="life-card__caption"> -->
+                <!-- Экскурсии и отдых на природе после насыщенных -->
+                <!-- занятий. -->
+              <!-- </figcaption> -->
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__info">
+           <span class="site-footer__name">IT TOP College</span>
+          <span class="site-footer__year">© <span id="footer-year"></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Галерея -->
+    <div
+      class="gallery-backdrop"
+      data-gallery-backdrop
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Фотогалерея мероприятия"
+    >
+      <div class="gallery">
+        <button
+          class="gallery__close"
+          type="button"
+          aria-label="Закрыть галерею"
+          data-gallery-close
+        >
+          ✕
+        </button>
+        <div class="gallery__content">
+          <button
+            class="gallery__nav gallery__nav--prev"
+            type="button"
+            aria-label="Предыдущее фото"
+            data-gallery-prev
+          >
+            ‹
+          </button>
+          <div class="gallery__image-wrapper">
+            <div class="gallery__image-placeholder" data-gallery-image></div>
+          </div>
+          <button
+            class="gallery__nav gallery__nav--next"
+            type="button"
+            aria-label="Следующее фото"
+            data-gallery-next
+          >
+            ›
+          </button>
+        </div>
+        <div class="gallery__meta">
+          <h3 class="gallery__title" data-gallery-title></h3>
+          <p class="gallery__date" data-gallery-date></p>
+          <p class="gallery__counter" data-gallery-counter></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
