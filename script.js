@@ -35,7 +35,7 @@ const DIGESTS = [
   },
   {
     id: "first-year-day",
-    title: "Турнир по CS2 между РПО и КБ первого курса",
+    title: "Турнир по CS2 между РПО и ГД первого курса",
     date: "10 февраля 2026",
     category: "events",
     categoryLabel: "Соревнования",
