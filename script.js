@@ -31,7 +31,6 @@ const DIGESTS = [
       "./images/с5.jpg",
       "./images/с6.jpg",
 	  "./images/с7.jpg",
-	  "./images/с7.jpg",
     ],
   },
   {
