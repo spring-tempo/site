@@ -71,20 +71,34 @@ const DIGESTS = [
       "./images/6.png",
     ],
   },
-  // Пример для будущих мероприятий:
+  {
+    id: "Hero of Russia",
+    title: "Встреча с Героем России Артёмом Владимировичем Чумаровым",
+    date: "06 февраля 2026",
+    category: "other",
+    categoryLabel: "Прочие мероприятия",
+    badge: "Прочие мероприятия",
+    cover: "./images/admin.hero.of.russia/1.PNG",
+    photos: [
+      "./images/admin.hero.of.russia/1.PNG",
+      "./images/admin.hero.of.russia/2.PNG",
+      "./images/admin.hero.of.russia/3.PNG",
+	  "./images/admin.hero.of.russia/4.PNG",
+    ],
+  },
   // {
-  //   id: "career-day",
-  //   title: "День карьеры",
-  //   date: "01 апреля 2026",
-  //   category: "other",
-  //   categoryLabel: "Прочие мероприятия",
-  //   badge: "Прочие мероприятия",
-  //   cover: "./images/career-day-cover.jpg",
-  //   photos: [
-  //     "./images/career1.jpg",
-  //     "./images/career2.jpg",
-  //     "./images/career3.jpg",
-  //   ],
+    // id: "career-day",
+    // title: "День карьеры",
+    // date: "01 апреля 2026",
+    // category: "other",
+    // categoryLabel: "Прочие мероприятия",
+    // badge: "Прочие мероприятия",
+    // cover: "./images/career-day-cover.jpg",
+    // photos: [
+      // "./images/career1.jpg",
+      // "./images/career2.jpg",
+      // "./images/career3.jpg",
+    // ],
   // },
 ];
 
