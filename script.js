@@ -86,6 +86,26 @@ const DIGESTS = [
 	  "./images/admin.hero.of.russia/4.PNG",
     ],
   },
+  {
+    id: "What-Where-When",
+    title: "Интеллектуальная игра «Что? Где? Когда?» 
+12 февраля состоялся III этап чемпионата
+Высший лиги по игре «Что? Где? Когда?» и наши студенты заняли в нём 3-е место!",
+    date: "12 февраля 2026",
+    category: "competitions",
+    categoryLabel: "Соревнования",
+    badge: "Соревнования",
+    cover: "./images/What.Where.When/8.jpg",
+    photos: [
+      "./images/What.Where.When/1.jpg",
+      "./images/What.Where.When/2.jpg",
+	  "./images/What.Where.When/3.jpg",
+	  "./images/What.Where.When/4.jpg",
+	  "./images/What.Where.When/5.jpg",
+	  "./images/What.Where.When/6.jpg",
+	  "./images/What.Where.When/7.jpg",
+    ],
+  },
   // {
     // id: "career-day",
     // title: "День карьеры",
